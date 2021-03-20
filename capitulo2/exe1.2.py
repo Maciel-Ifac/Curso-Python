@@ -9,5 +9,5 @@ def f(a, b, c):
 
 x1, x2 = f(1, 0.25, -5)
 
-print("\nValor de x1 é: {0:.2f}".format(x1))
-print("Valor de x2 é: {0:.2f}".format(x2))
+print("\nO valor de x1 é: {0:.5f}".format(x1))
+print("O valor de x2 é: {0:.5f}\n".format(x2))
