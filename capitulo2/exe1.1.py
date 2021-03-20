@@ -20,4 +20,4 @@ plt.ylim(-5, 93)
 plt.show()
 
 # Imprimindo resultado
-print(f(2.3))
+print(f(2.3))print("O valor de x é: {0:.5f}".format(f(2.11456)))
