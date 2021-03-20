@@ -11,6 +11,7 @@ def f(x):
 
 
 # Plotando a função
+'''
 x = np.linspace(-10, 10)
 
 plt.grid()
@@ -19,5 +20,6 @@ plt.xlim(-10, 10)
 plt.ylim(-5, 93)
 plt.show()
 
+'''
 # Imprimindo resultado
 print(f(2.3))print("O valor de x é: {0:.5f}".format(f(2.11456)))
