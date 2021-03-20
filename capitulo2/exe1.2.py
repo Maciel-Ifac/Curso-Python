@@ -1,5 +1,6 @@
 # Calcula as raizes de uma equação do segundo grau.
 # f(x) = ax**2 + b*x + c
+'''
 
 def f(a, b, c):
     x1 = (-b + (b**2 - 4*a*c)**(1/2)) / (2*a)
