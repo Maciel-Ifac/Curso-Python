@@ -16,6 +16,7 @@ print(L4)
 
 L5 = L3 + L4 # Soma
 L5 = [*L3,*L4] # Desempacotamento
+print(L5)
 '''
 Ver link, pois é bem interessante:
 https://www.delftstack.com/pt/howto/python/how-to-concatenate-two-or-multiple-lists-in-python/
