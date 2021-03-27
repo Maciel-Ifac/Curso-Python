@@ -13,8 +13,10 @@ L4 = [k**2 for k in L3] # Eleva cada elemento da lista ao quadrado.
 print(L4)
 
 # 1.4. Podemos concatenar L3 e L4 de várias formas. Segue dois exemplos:
-# Somando
-#L5 = L3 + L4
-# Por meio da função extend()
-L5 =  L3.extend(L4)
-print(L5)
+
+L5 = L3 + L4 # Soma
+L5 = [*L3,*L4] # Desempacotamento
+'''
+Ver link, pois é bem interessante:
+https://www.delftstack.com/pt/howto/python/how-to-concatenate-two-or-multiple-lists-in-python/
+'''
