@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 # Exercício 5
 u = {}
 td = {}
-
+u1 = {}
 a = -0.5
 h = 1/1000
 u[0]= 1.0
@@ -18,14 +18,11 @@ for n in range(0,1000):
     
     td[n]= n*h
     
-    print(u[n],td[n])
+    u1[n] = 10**(a*n*h)
 
+    #print(u[n],td[n],u1[n])
 
-   
-
-y = td.values()
-x = u.values()
-
-plt.plot(u.values())
-plt.plot(td.values())
+plt.plot(u.values(),label='MUV')
+plt.plot(u1.values())
+plt.legend(loc='lower right', shadow=True)
 plt.show()
