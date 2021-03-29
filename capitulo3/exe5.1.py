@@ -22,20 +22,20 @@ for n in range(0,1003):
 
 dif = np.absolute(np.array(z) - np.array(u)) # dif = |e**(a*tb) – u |
 
-# Primeiro Gráfico tb x u
-#plt.plot(tb,u) 
+# Plotando resultados !!!
 
-# Segundo Gráfico |e**(a*tb) – u |
-'''
-plt.subplot(1,2,1)
-plt.plot(tb,u)
-plt.subplot(1,2,2)
-plt.plot(x,dif)
-'''
 fig, (ax1, ax2) = plt.subplots(1, 2)
-ax1.plot(tb, u,color ='blue',linewidth = 1.5)
-ax2.plot(x, dif,color ='blue',linewidth = 1.5)
-ax1.set(ylabel='Probabilidade', xlabel='Posição(j)')
-ax2.set(ylabel='Probabilidade', xlabel='Posição(j)')
+
+ax1.plot(tb, u,color ='blue',linewidth = 2.0)
+ax1.set_ylabel('tb', fontsize=20) # eixo y
+ax1.set_xlabel('u', fontsize=20)  # eixo x
+ax1.set_title('')
+
+ax2.plot(x, dif,color ='blue',linewidth = 2.0)
+ax2.set_ylabel('dif', fontsize=20) # eixo y
+ax2.set_xlabel('x', fontsize=20)  # eixo x
+
+
 fig.set_size_inches(7, 2) # dimensão da figura(altura-largura)
 plt.tight_layout()#regulariza a distância entre os gráficos
+plt.show()
