@@ -18,7 +18,7 @@ for n in range(0,1000):
     
 for n in range(0,1003):
     tb.append(np.exp(n*h)) 
-    z.append(np.exp(a*tb))
+    z.append(np.exp(a*n*h))
     x.append(n)
 
 dif = np.absolute(np.array(z) - np.array(u)) # dif = |e**(a*tb) – u |
