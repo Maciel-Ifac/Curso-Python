@@ -8,16 +8,17 @@ h = 1/1000
 z = [] # lista e**(a*tb)
 x = [] # lista contendo n valores inteiros (0,...,1003)
 
+
 u.insert(0,1.0)
-u.insert(1,10**(h*a))
-u.insert(1,10**(2*h*a))
+u.insert(1,np.exp(h*a))
+u.insert(1,np.exp(2*h*a))
 
 for n in range(0,1000):
     u.append(u[n+2] + h*a*((23/12)*u[n+2]-(4/3)*u[n+1]*(5/12)*u[n]))
     
 for n in range(0,1003):
-    tb.append(10**(n*h))
-    z.append(10**(10**(n*h)))
+    tb.append(np.exp(n*h)) 
+    z.append(np.exp(a*tb))
     x.append(n)
 
 dif = np.absolute(np.array(z) - np.array(u)) # dif = |e**(a*tb) – u |
